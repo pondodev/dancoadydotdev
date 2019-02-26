@@ -1,29 +1,32 @@
 * {
-    font-family: "sans serif";
-    font-size: 1.1em;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.05em;
     color: white;
-    background-color: #494949;
-    background-image: url("images/background.jpg");
 }
 
 html {
+    background: #494949;
+    background: url("../images/background.jpg") no-repeat;
+    background-size: cover;
+}
+
+body {
     width: 90%;
     margin: auto;
 }
 
 h1 {
-    font-weight: normal;
     font-size: 4em;
 }
 
 h2 {
-    font-weight: normal;
     font-size: 2em;
 }
 
 #subheading {
     font-size: 0.5em;
-    color: #888888
+    color: #888888;
+    font-weight: normal;
 }
 
 footer {
@@ -35,4 +38,3 @@ footer hr {
     width: 50%;
     color: #888888;
 }
-
