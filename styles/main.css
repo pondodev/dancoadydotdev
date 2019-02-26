@@ -1,0 +1,66 @@
+* {
+    font-family: "sans serif";
+    font-size: 1em;
+    color: white;
+    background-color: #494949;
+}
+
+html {
+    width: 90%;
+    margin: auto;
+}
+
+main {
+    display: grid;
+    grid-template-columns: [left] 70% [middle] auto [right];
+    grid-template-rows: [title1] 10% [content1] auto [end];
+}
+
+h1 {
+    font-weight: normal;
+    font-size: 4em;
+}
+
+h2 {
+    font-weight: normal;
+    font-size: 2em;
+}
+
+#subheading {
+    font-size: 0.5em;
+    color: #888888
+}
+
+footer {
+    color: #888888;
+    text-align: center;
+}
+
+footer hr {
+    width: 50%;
+    color: #888888;
+}
+
+#aboutme-heading {
+    grid-column-start: left;
+    grid-column-end: right;
+    grid-row-start: title1;
+    grid-row-end: content1;
+}
+
+#aboutme-content {
+    grid-column-start: left;
+    grid-column-end: middle;
+    grid-row-start: content1;
+    grid-row-end: end;
+}
+
+#aboutme-img {
+    width: 100%;
+    height: auto;
+    border-radius: 100%;
+    grid-column-start: middle;
+    grid-column-end: right;
+    grid-row-start: content1;
+    grid-row-end: end;
+}
