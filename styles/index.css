@@ -1,6 +1,6 @@
 #aboutme {
     display: grid;
-    grid-template-columns: 70%  5% auto;
+    grid-template-columns: 65%  5% auto;
     grid-template-rows: auto auto;
     grid-template-areas:
         "heading heading img"
@@ -19,7 +19,7 @@
 }
 
 #aboutme-img {
-    width: 80%;
+    width: 70%;
     height: auto;
     border-radius: 100%;
     grid-area: img;
