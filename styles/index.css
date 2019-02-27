@@ -19,9 +19,13 @@
 }
 
 #aboutme-img {
-    width: 90%;
+    width: 80%;
     height: auto;
     border-radius: 100%;
     grid-area: img;
     margin: auto;
+}
+
+#skills {
+    width: 100%;
 }
