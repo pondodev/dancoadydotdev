@@ -1,0 +1,23 @@
+#aboutme-heading {
+    grid-column-start: left;
+    grid-column-end: right;
+    grid-row-start: title1;
+    grid-row-end: content1;
+}
+
+#aboutme-content {
+    grid-column-start: left;
+    grid-column-end: middle;
+    grid-row-start: content1;
+    grid-row-end: end;
+}
+
+#aboutme-img {
+    width: 100%;
+    height: auto;
+    border-radius: 100%;
+    grid-column-start: middle;
+    grid-column-end: right;
+    grid-row-start: content1;
+    grid-row-end: end;
+}
