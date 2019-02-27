@@ -1,4 +1,6 @@
 * {
+    --nav-color: purple;
+
     font-family: 'Poppins', sans-serif;
     font-size: 1.05em;
     color: white;
@@ -23,12 +25,6 @@ h2 {
     font-size: 2em;
 }
 
-#subheading {
-    font-size: 0.5em;
-    color: #888888;
-    font-weight: normal;
-}
-
 footer {
     color: #888888;
     text-align: center;
@@ -37,4 +33,39 @@ footer {
 footer hr {
     width: 50%;
     color: #888888;
+}
+
+a {
+    color: #494949;
+    transition: color 0.5s ease;
+}
+
+a:hover {
+    color: white;
+}
+
+.nav {
+    color: #888888;
+    text-decoration: none;
+    transition: color 0.5s ease;
+}
+
+.nav:hover {
+    color: var(--nav-color);
+}
+
+#subheading {
+    font-size: 0.5em;
+    color: #888888;
+    font-weight: normal;
+}
+
+#heading {
+    color: white;
+    text-decoration: none;
+    transition: color 0.5s ease;
+}
+
+#heading:hover {
+    color: var(--nav-color);
 }
