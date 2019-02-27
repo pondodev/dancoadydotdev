@@ -1,18 +1,21 @@
 #aboutme {
     display: grid;
     grid-template-columns: 70%  5% auto;
-    grid-template-rows: 10% auto;
+    grid-template-rows: auto auto;
     grid-template-areas:
-        "heading heading heading"
+        "heading heading img"
         "content buffer img";
 }
 
 #aboutme-heading {
     grid-area: heading;
+    align-self: end;
+    margin: 0px;
 }
 
 #aboutme-content {
     grid-area: content;
+    margin: auto;
 }
 
 #aboutme-img {
@@ -20,4 +23,5 @@
     height: auto;
     border-radius: 100%;
     grid-area: img;
+    margin: auto;
 }
