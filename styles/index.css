@@ -1,23 +1,23 @@
+#aboutme {
+    display: grid;
+    grid-template-columns: 70%  5% auto;
+    grid-template-rows: 10% auto;
+    grid-template-areas:
+        "heading heading heading"
+        "content buffer img";
+}
+
 #aboutme-heading {
-    grid-column-start: left;
-    grid-column-end: right;
-    grid-row-start: title1;
-    grid-row-end: content1;
+    grid-area: heading;
 }
 
 #aboutme-content {
-    grid-column-start: left;
-    grid-column-end: middle;
-    grid-row-start: content1;
-    grid-row-end: end;
+    grid-area: content;
 }
 
 #aboutme-img {
-    width: 100%;
+    width: 90%;
     height: auto;
     border-radius: 100%;
-    grid-column-start: middle;
-    grid-column-end: right;
-    grid-row-start: content1;
-    grid-row-end: end;
+    grid-area: img;
 }

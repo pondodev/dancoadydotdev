@@ -3,17 +3,12 @@
     font-size: 1.1em;
     color: white;
     background-color: #494949;
+    background-image: url("images/background.jpg");
 }
 
 html {
     width: 90%;
     margin: auto;
-}
-
-main {
-    display: grid;
-    grid-template-columns: [left] 70% [middle] auto [right];
-    grid-template-rows: [title1] 10% [content1] auto [end];
 }
 
 h1 {
