@@ -10,21 +10,17 @@ String.prototype.rotpos = function(start, reverse=false) {
     for (var i = 0; i < out.length; i++) {
         var c = out.charAt(i);
         var o = start + i;
+        var bounds;
+
+        if (c.match(/[a-z]/g)) bounds = [97, 122];
+        else if (c.match(/[A-Z]/g)) bounds = [65, 90];
+        else continue;
+
         var r = c.charCodeAt(0) + (reverse ? -o : o);
-
-        if (c.match(/[a-z]/g)){
-            while (r > 122) r = r - 26;
-            while (r < 97) r = r + 26;
-            c = String.fromCharCode(r);
-        }
-        else if (c.match(/[A-Z]/g)) {
-            while (r > 90) r = r - 26;
-            while (r < 65) r = r + 26;
-            c = String.fromCharCode(r);
-        }
-        out = out.replaceAt(i, c);
+        while (r < bounds[0]) r = r + 26;
+        while (r > bounds[1]) r = r - 26;
+        out = out.replaceAt(i, String.fromCharCode(r));
     }
-
     return out;
 }
 
